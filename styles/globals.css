@@ -1,26 +1,118 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
+html {
   box-sizing: border-box;
+  font-size: 16px;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+body {
+  background: #c2e59c; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.App {
+  width: 300px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2rem;
+  font-family: arial, sans-serif;
+}
+
+.rightOrWrong {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.rightScore,
+.wrongScore {
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+
+.rightScore {
+  background: #8cf18c;
+}
+
+.wrongScore {
+  background: #f38585;
+}
+
+.question {
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6rem;
+}
+
+.capital {
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 55px;
+  margin-top: 5px;
+}
+
+button {
+  display: block;
+  cursor: pointer;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  color: black;
+  background: #ccc;
+  width: 100%;
+}
+
+button:hover {
+  background: #bbb;
+}
+
+:disabled,
+:disabled:hover {
+  background: #eee;
+  cursor: default;
+}
+
+.right,
+.right:hover {
+  background: #8cf18c;
+}
+
+.wrong,
+.wrong:hover {
+  background: #f38585;
+}
+
+.nextBtn {
+  background: #c1f3ff;
+  margin-top: 2rem;
+}
+
+.nextBtn:hover {
+  background: #a4e3f3;
+}
+
+::-moz-focus-inner {
+  border: none;
 }
